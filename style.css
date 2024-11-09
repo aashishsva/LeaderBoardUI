@@ -132,3 +132,50 @@ section {
 .button_group .but2:hover {
     background-color: #ff5c77;
 }
+
+/* Media query for devices from 1024px and smaller */
+@media (max-width: 1024px) {
+    section {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .section1, .section2 {
+        min-width: 90%;
+        padding: 20px;
+    }
+
+    .section1 h1 {
+        font-size: 28px;
+    }
+
+    .section1 form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section1 input, .section1 button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .section2 {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .button_group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button_group span {
+        margin-bottom: 5px;
+        text-align: left;
+    }
+
+    .button_group button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
